@@ -2,7 +2,8 @@ git init 初始化版本库
 git add <filename> 添加文件到版本库暂存区(called stage or index)
 git commit 把暂存区的内容提交到当前分支（默认分支是master）
 
-git diff 查看当前修改和版本库有何不同
+git diff 查看当前修改和版本库有何不同 （git add 之前执行）
+git diff --cached 	对比暂存区和最近一次提交的不同 （git add 之后执行）
 
 git status 查看当前版本库状态
 git log 查看提交历史
@@ -10,5 +11,4 @@ git reflog 查看命令历史
 
 HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset --hard commit_id。
 git reset --hard head^  返回上一个版本    head^^ 返回上上个版本   head~100   往上100个版本
-
 
