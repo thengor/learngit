@@ -4,7 +4,7 @@ git commit 把暂存区的内容提交到当前分支（默认分支是master）
 
 ”暂存区就像购物车，没到付款的时候你都不确定购物车里的东西全部都是要的。。。每拿一件商品就付一次款。。。那才麻烦大了。“
 
-git diff 查看工作区和版本库的不同 （git add 之前执行）
+git diff [head -- filename]查看工作区和版本库的不同 （git add 之前执行）
 git diff --cached 	对比暂存区和版本库的不同 （git add 之后执行）
 
 git status 查看当前版本库状态
