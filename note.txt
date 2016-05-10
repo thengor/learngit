@@ -61,3 +61,9 @@ git reset命令既可以回退版本，也可以把暂存区的修改回退到�
 4）这时你就看到删除的文件又回来啦。啦啦啦！
 
 
+要关联一个远程库，使用命令git remote add origin git@github.com:thengor/learngit.git；
+也可通过 HTTPS 方式：git remote add origin https://github.com/thengor/learngit.git
+关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
+此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
+
+
