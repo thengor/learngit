@@ -37,5 +37,27 @@ git reset命令既可以回退版本，也可以把暂存区的修改回退到�
         git checkout -- myfile.txt (撤销工作区修改)
 ④ 修改后 add并commit了，需要撤销修改时：
         git reset --hard HEAD^  (版本回退)**
+		
+		
+
+一、rm只删除工作区信息；
+使用 git checkout -- file即可恢复；
+
+二、git rm 删除工作区和stage信息；
+1、使用git reset HEAD -- file即可恢复；
+
+2、恢复步骤：
+1）先使用git reset HEAD -- file从master中把已删除信息copy到到stage区；
+2）再使用git checkout -- file从stage区把已删除信息copy到工作区。over！！！
+3）这时你就看到删除的文件又回来啦。啦啦啦！
+
+三、git commit －m “file”删除工作区，stage和master信息；
+1、使用git reset --hard HEAD^即可恢复。
+
+2、恢复步骤：
+1）先使用git reset --hard HEAD^从master回收处恢复到master中；
+2）再使用git reset HEAD -- file从master中把已删除信息copy到到stage区；
+3）最后，使用git checkout -- file从stage区把已删除信息copy到工作区。
+4）这时你就看到删除的文件又回来啦。啦啦啦！
 
 
