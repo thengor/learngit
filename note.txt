@@ -68,4 +68,6 @@ git reset命令既可以回退版本，也可以把暂存区的修改回退到�
 
 git clone "SSH/HTTPS url" 克隆远程仓库
 
+git checkout -b "branch name" 创建并切换分支 = git branch "branch name" + git checkout "branch name"
+
 
