@@ -76,5 +76,8 @@ git branch -d dev  删除分支
 merge 有冲突， 用git status 查看有冲突的文件，手动解决后，git add & git commit， 
 用git log --graph [--pretty=oneline --abbrev-commit] 可以看到分支合并图。
 
+分支 ： http://www.oschina.net/question/31384_157479
+Fast-forward信息，Git告诉我们，这次合并是“快进模式”，也就是直接把master指向dev的当前提交.
+
 
 
