@@ -69,5 +69,9 @@ git reset命令既可以回退版本，也可以把暂存区的修改回退到�
 git clone "SSH/HTTPS url" 克隆远程仓库
 
 git checkout -b "branch name" 创建并切换分支 = git branch "branch name" + git checkout "branch name"
+git checkout master 切换到主分支， dev分支提交的内容不见， 需要merge到master - git merge dev
+git merge命令用于合并指定分支到当前分支
+git branch -d dev  删除分支
+
 
 
