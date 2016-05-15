@@ -73,5 +73,8 @@ git checkout master 切换到主分支， dev分支提交的内容不见， 需�
 git merge命令用于合并指定分支到当前分支
 git branch -d dev  删除分支
 
+merge 有冲突， 用git status 查看有冲突的文件，手动解决后，git add & git commit， 
+用git log --graph [--pretty=oneline --abbrev-commit] 可以看到分支合并图。
+
 
 
